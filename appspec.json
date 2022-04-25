@@ -1,0 +1,17 @@
+{
+    "version": 0.0,
+    "Resources": [
+      {
+        "TargetService": {
+          "Type": "AWS::ECS::Service",
+          "Properties": {
+            "TaskDefinition": "arn:aws:iam::939948068654:role/JenkinsCodeDeploy-JenkinsCodeDeployRole-J84R9UNGGTM3",
+            "LoadBalancerInfo": {
+              "ContainerName": "spring-petclinic-2.6.0-SNAPSHOT.jar",
+              "ContainerPort": 8082
+            }
+          }
+        }
+      }
+    ]
+  }
